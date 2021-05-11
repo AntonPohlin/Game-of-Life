@@ -15,7 +15,7 @@ pip install pygame
 ```python
 import game_of_life as GOF
 
-GOF.set_fps(50) #Default is 60 FPS
+GOF.set_fps(50) # default is 60 FPS
 GOF.main() # to start the program
 
 ```
