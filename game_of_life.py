@@ -3,6 +3,10 @@ import helpers as h
 import constants as C
 
 
+def set_fps(fps):
+    C.FPS = fps
+
+
 def main():
 
     pygame.init()

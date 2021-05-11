@@ -27,5 +27,5 @@ ICON = 'heart.png'
 FONT_COLOUR = (73, 174, 101)
 # main loop and pygame variables
 RUN_CONTINUOUSLY = False
-FPS = 40
+FPS = 60
 RUNNING = True

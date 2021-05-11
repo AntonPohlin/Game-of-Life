@@ -4,7 +4,7 @@ Game of life shows how very simple rules can create very complex objects in an i
 
 ## Installation
 
-The program needs pygame to work, use the package manager [pip](https://pip.pypa.io/en/stable/) to install pygame.
+The program needs [pygame](https://www.pygame.org/news) to work, use the package manager [pip](https://pip.pypa.io/en/stable/) to install pygame.
 
 ```bash
 pip install pygame
@@ -15,6 +15,7 @@ pip install pygame
 ```python
 import game_of_life as GOF
 
+GOF.set_fps(50) #Default is 60 FPS
 GOF.main() # to start the program
 
 ```
@@ -27,8 +28,8 @@ Press <kbd>Space</kbd> toggle run indefinitely\
 Press <kbd>Up</kbd>/<kbd>Down</kbd> to increase/decrease the size of the cells
 
 ## Authors
-Created by Anton Pohlin,
-contact antonpohlin@gmail.com
+Created by Anton Pohlin\
+Contact: antonpohlin@gmail.com
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

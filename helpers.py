@@ -43,20 +43,6 @@ def get_cols_rows(win_width, win_height, cell_width):
     rows = win_height//cell_width
     return cols, rows
 
-# Print some basic information on console
-
-
-def info_text(win_width, win_height, cell_width, column_cells, row_cells):
-    print('\n'*5)
-    print('------------------------------------')
-    C.NUM_OF_CELLS = C.COLUMNS_OF_CELLS*C.ROWS_OF_CELLS
-    print(f'columns: {C.COLUMNS_OF_CELLS}\nrows: {C.ROWS_OF_CELLS} \
-            \nnum_of_cells: {C.NUM_OF_CELLS} \
-            \ncell_width: {C.CELL_WIDTH}')
-    print(f'{C.WIN_WIDTH}x{C.WIN_HEIGHT}')
-    print('WIN_CLIP = '+str(C.WIN_CLIP))
-    print('------------------------------------')
-
 
 def create_cell_grid(columns, rows,
                      cell_width, cell_gap):
@@ -116,8 +102,6 @@ def update_cell_grid(win_width, win_height, cell_width):
     C.CELL_GRID = create_cell_grid(
         C.COLUMNS_OF_CELLS, C.ROWS_OF_CELLS,
         C.CELL_WIDTH, C.CELL_GAP)
-    info_text(C.WIN_WIDTH, C.WIN_HEIGHT,
-              C.CELL_WIDTH, C.COLUMNS_OF_CELLS, C.ROWS_OF_CELLS)
 
 
 def drag(pos):
