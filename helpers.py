@@ -25,16 +25,12 @@ def get_data():
 
     RAMinfo = get_RAMinfo()
     CPUinfo = get_CPUinfo()
-    # print(CPUinfo)
+
     data_dict.update({'Tot RAM': [RAMinfo[0], 0, 1]})
     data_dict.update({' Avail RAM': [RAMinfo[1], 1, 1]})
     data_dict.update({' %RAM': [RAMinfo[2], 2, 1]})
     data_dict.update({' Used RAM': [RAMinfo[3], 3, 1]})
     data_dict.update({' CPU': [CPUinfo, 4, 1]})
-
-    # print(data_dict)
-    # for key in data_list:
-    #    print(f'{key} {data_list[key]}')
     return data_dict
 
 
