@@ -29,7 +29,7 @@ Press <kbd>Up</kbd>/<kbd>Down</kbd> to increase/decrease the size of the cells
 
 ## Authors
 Created by Anton Pohlin\
-Contact: antonpohlin@gmail.com
+Contact: pohlinanton@gmail.com
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
