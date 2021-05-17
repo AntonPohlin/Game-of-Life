@@ -7,6 +7,11 @@ def set_fps(fps):
     C.FPS = fps
 
 
+def randomize_cells(setting, factor):
+    C.RANDOMIZE_CELLS = setting
+    C.FACTOR_OF_ALIVE_CELLS = factor
+
+
 def main():
 
     pygame.init()
