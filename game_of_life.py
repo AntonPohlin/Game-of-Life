@@ -57,7 +57,7 @@ def main():
                 # if a cell is clicked, switch state
                 if clicked_cell:
                     clicked_cell.switch_state()
-                    C.MOUSE_DRAG_VALUE = clicked_cell.state
+                    C.MOUSE_CLICK_CELL_STATE = clicked_cell.state
                     C.MOUSE_DRAG = True
 
             elif event.type == pygame.MOUSEBUTTONUP:

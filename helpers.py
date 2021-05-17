@@ -114,7 +114,7 @@ def drag(pos):
     row = int(pos[1]/C.CELL_WIDTH)
     clicked_cell = C.CELL_GRID.get((column, row))
     if clicked_cell:
-        clicked_cell.state = C.MOUSE_DRAG_VALUE
+        clicked_cell.state = C.MOUSE_CLICK_CELL_STATE
 
 
 def next_iteration():

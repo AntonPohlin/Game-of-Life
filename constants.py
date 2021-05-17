@@ -21,7 +21,7 @@ dead_colour = [30, 30, 30]
 
 # help variables for mouse
 MOUSE_DRAG = False
-MOUSE_DRAG_VALUE = ''
+MOUSE_CLICK_CELL_STATE = ''
 
 # caption, icon, font
 CAPTION = 'The Game of Life'
