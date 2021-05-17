@@ -85,7 +85,7 @@ def get_cell_nextstate(cells_dict, coord):
         cells_dict[coord].next_state == 'dead'
 
 
-def update_cell_grid(win_width, win_height, cell_width):
+def update_cell_grid_dims(win_width, win_height, cell_width):
     C.COLUMNS_OF_CELLS, C.ROWS_OF_CELLS = get_cols_rows(
         win_width, win_height, cell_width)
     if C.WIN_CLIP:

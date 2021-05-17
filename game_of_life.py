@@ -15,7 +15,7 @@ def main():
     icon = pygame.image.load(C.ICON)
     pygame.display.set_icon(icon)
 
-    h.update_cell_grid(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH)
+    h.update_cell_grid_dims(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH)
     screen = pygame.display.set_mode((C.WIN_WIDTH, C.WIN_HEIGHT+C.WIN_STATS),
                                      pygame.RESIZABLE)
 
@@ -37,7 +37,7 @@ def main():
 
             if event.type == pygame.VIDEORESIZE:
                 C.WIN_WIDTH, C.WIN_HEIGHT = event.w, event.h-C.WIN_STATS
-                h.update_cell_grid(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH)
+                h.update_cell_grid_dims(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH)
                 screen = pygame.display.set_mode((C.WIN_WIDTH,
                                                   C.WIN_HEIGHT+C.WIN_STATS),
                                                  pygame.RESIZABLE)
@@ -65,12 +65,12 @@ def main():
 
                 if event.key == pygame.K_DOWN:
                     if C.CELL_WIDTH-5 > 0:
-                        h.update_cell_grid(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH-5)
+                        h.update_cell_grid_dims(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH-5)
                         screen = pygame.display.set_mode(
                             (C.WIN_WIDTH, C.WIN_HEIGHT+C.WIN_STATS), pygame.RESIZABLE)
 
                 if event.key == pygame.K_UP:
-                    h.update_cell_grid(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH+5)
+                    h.update_cell_grid_dims(C.WIN_WIDTH, C.WIN_HEIGHT, C.CELL_WIDTH+5)
                     screen = pygame.display.set_mode(
                         (C.WIN_WIDTH, C.WIN_HEIGHT+C.WIN_STATS), pygame.RESIZABLE)
 
