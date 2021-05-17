@@ -38,12 +38,17 @@ def get_data():
 def get_cols_rows(win_width, win_height, cell_width):
     cols = win_width//cell_width
     rows = win_height//cell_width
+    if cols < 1 or rows < 1:
+        raise ValueError('Must have atleast one column AND row')
     return cols, rows
 
 
 def create_cell_grid(columns, rows,
-                     cell_width, cell_gap):
+                     cell_width, cell_gap=2):
     coordinates_dict = {}
+
+    if cell_width-cell_gap < 0:
+        raise ValueError('Cell width must be positive!')
     cc.Cell.cell_width = cell_width-cell_gap
     for x in range(columns):
         for y in range(rows):
