@@ -90,7 +90,7 @@ def get_cell_nextstate(cells_dict, coord):
 
     # GoL RULE 3
     else:
-        cells_dict[coord].next_state == 'dead'
+        cells_dict[coord].next_state = 'dead'
 
 
 def update_cell_grid_dims(win_width, win_height, cell_width):
