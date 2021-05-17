@@ -51,11 +51,11 @@ def create_cell_grid(columns, rows,
             cell_y_coord = y*cell_width
             if C.RANDOMIZE_CELLS:
                 if random.uniform(0, 1) < C.FACTOR_OF_ALIVE_CELLS:
-                    random_state = 'alive'
+                    coordinates_dict.update({(x, y): cc.Cell(
+                        cell_x_coord, cell_y_coord, 'alive')})
                 else:
-                    random_state = 'dead'
-                coordinates_dict.update({(x, y): cc.Cell(
-                    cell_x_coord, cell_y_coord, random_state)})
+                    coordinates_dict.update({(x, y): cc.Cell(
+                        cell_x_coord, cell_y_coord, 'dead')})
             else:
                 coordinates_dict.update({(x, y): cc.Cell(
                     cell_x_coord, cell_y_coord)})
