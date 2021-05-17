@@ -44,7 +44,6 @@ def main():
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-
                 column = int(pos[0]/C.CELL_WIDTH)
                 row = int(pos[1]/C.CELL_WIDTH)
 

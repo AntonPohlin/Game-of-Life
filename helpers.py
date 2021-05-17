@@ -2,6 +2,7 @@ import cell_class as cc
 import constants as C
 import pygame
 import psutil
+import random
 
 
 def get_RAMinfo():
@@ -42,15 +43,22 @@ def get_cols_rows(win_width, win_height, cell_width):
 
 def create_cell_grid(columns, rows,
                      cell_width, cell_gap):
-
     coordinates_dict = {}
     cc.Cell.cell_width = cell_width-cell_gap
     for x in range(columns):
         for y in range(rows):
             cell_x_coord = x*cell_width
             cell_y_coord = y*cell_width
-            coordinates_dict.update({(x, y): cc.Cell(
-                cell_x_coord, cell_y_coord)})
+            if C.RANDOMIZE_CELLS:
+                if random.uniform(0, 1) < C.FACTOR_OF_ALIVE_CELLS:
+                    random_state = 'alive'
+                else:
+                    random_state = 'dead'
+                coordinates_dict.update({(x, y): cc.Cell(
+                    cell_x_coord, cell_y_coord, random_state)})
+            else:
+                coordinates_dict.update({(x, y): cc.Cell(
+                    cell_x_coord, cell_y_coord)})
     return coordinates_dict
 
 
@@ -98,6 +106,7 @@ def update_cell_grid_dims(win_width, win_height, cell_width):
     C.CELL_GRID = create_cell_grid(
         C.COLUMNS_OF_CELLS, C.ROWS_OF_CELLS,
         C.CELL_WIDTH, C.CELL_GAP)
+    C.ITERATIONS = 0
 
 
 def drag(pos):
