@@ -12,6 +12,8 @@ COLUMNS_OF_CELLS = 0
 ROWS_OF_CELLS = 0
 CELL_GRID = {}
 ITERATIONS = 0
+RANDOMIZE_CELLS = True
+FACTOR_OF_ALIVE_CELLS = 0.1
 
 # class constants
 alive_colour = [50, 250, 150]
