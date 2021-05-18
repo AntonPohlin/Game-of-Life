@@ -1,13 +1,13 @@
 import pygame
-import helpers as h
-import constants as C
+from libs import helpers as h
+from libs import constants as C
 
 
 def set_fps(fps):
     C.FPS = fps
 
 
-def randomize_cells(setting, factor):
+def randomize_mode(setting, factor):
     C.RANDOMIZE_CELLS = setting
     C.FACTOR_OF_ALIVE_CELLS = factor
 
@@ -94,4 +94,19 @@ def main():
 
 
 if __name__ == '__main__':
+    C.RUN_CONTINUOUSLY = True
+    C.CELL_WIDTH = 5
+    import cProfile
+    cProfile.run('main()', "benchmark_profiling\\output.dat")
+
+    import pstats
+    from pstats import SortKey
+
+    with open("benchmark_profiling\\output_time.txt", "w") as f:
+        p = pstats.Stats("benchmark_profiling\\output.dat", stream=f)
+        p.sort_stats("time").print_stats()
+
+    with open("benchmark_profiling\\output_calls.txt", "w") as f:
+        p = pstats.Stats("benchmark_profiling\\output.dat", stream=f)
+        p.sort_stats("calls").print_stats()
     main()
