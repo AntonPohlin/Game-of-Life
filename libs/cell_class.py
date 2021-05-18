@@ -28,3 +28,15 @@ class Cell:
             self.state = 'alive'
         elif self.state == 'alive':
             self.state = 'dead'
+
+    def __repr__(self):
+        return f'Cell: {self.x}, {self.y}, {self.state}'
+
+    def __str__(self):
+        return f'Cell - Pos: {self.x}, {self.y} - State {self.state}'
+
+
+if __name__ == '__main__':
+    testcell = Cell(1, 2, 'dead')
+    print(repr(testcell))
+    print(str(testcell))
