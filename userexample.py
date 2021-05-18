@@ -1,8 +1,9 @@
 import game_of_life as GOL
 
 # init
-GOL.randomize_cells(True, 0.1)  # randomize with a factor of 0.1 alive cells
-GOL.set_fps(50)  # set frames per second
+GOL.randomize_mode(True, 0.1)  # randomize with a factor of 0.1 alive cells
+GOL.set_fps(60)  # set frames per second
+
 
 # alternatively, change constants directly in constants.py
 # RANDOMIZE_CELLS = True
