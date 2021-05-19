@@ -12,6 +12,10 @@ def randomize_mode(setting, factor):
     C.FACTOR_OF_ALIVE_CELLS = factor
 
 
+def set_max_it(iter):
+    C.MAX_ITERATIONS = iter
+
+
 def main():
 
     pygame.init()
@@ -36,6 +40,9 @@ def main():
 
     while C.RUNNING:
         screen.fill((0, 0, 0))
+        if C.MAX_ITERATIONS == C.ITERATIONS:
+            C.RUN_CONTINUOUSLY = False
+            C.RUNNING = False
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 C.RUNNING = False
@@ -95,7 +102,8 @@ def main():
 
 if __name__ == '__main__':
     C.RUN_CONTINUOUSLY = True
-    C.CELL_WIDTH = 5
+    C.MAX_ITERATIONS = 40
+    C.CELL_WIDTH = 4
     import cProfile
     cProfile.run('main()', "benchmark_profiling\\output.dat")
 
@@ -109,4 +117,3 @@ if __name__ == '__main__':
     with open("benchmark_profiling\\output_calls.txt", "w") as f:
         p = pstats.Stats("benchmark_profiling\\output.dat", stream=f)
         p.sort_stats("calls").print_stats()
-    main()
