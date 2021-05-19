@@ -25,7 +25,7 @@ MOUSE_CLICK_CELL_STATE = ''
 
 # caption, icon, font
 CAPTION = 'The Game of Life'
-ICON = 'heart.png'
+ICON = 'images/heart.png'
 FONT_COLOUR = (73, 174, 101)
 # main loop and pygame variables
 RUN_CONTINUOUSLY = False
