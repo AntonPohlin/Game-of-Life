@@ -7,13 +7,22 @@ def set_fps(fps):
     C.FPS = fps
 
 
+def set_window(width, height):
+    C.WIN_WIDTH = width
+    C.WIN_HEIGHT = height
+
+
 def randomize_mode(setting, factor):
     C.RANDOMIZE_CELLS = setting
     C.FACTOR_OF_ALIVE_CELLS = factor
 
 
-def set_max_it(iter):
+def set_max_iterations(iter):
     C.MAX_ITERATIONS = iter
+
+
+def set_cell_width(width):
+    C.CELL_WIDTH = width
 
 
 def main():

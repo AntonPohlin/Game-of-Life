@@ -7,13 +7,22 @@ def set_fps(fps):
     C.FPS = fps
 
 
+def set_window(width, height):
+    C.WIN_WIDTH = width
+    C.WIN_HEIGHT = height
+
+
 def randomize_mode(setting, factor):
     C.RANDOMIZE_CELLS = setting
     C.FACTOR_OF_ALIVE_CELLS = factor
 
 
-def set_max_it(iter):
+def set_max_iterations(iter):
     C.MAX_ITERATIONS = iter
+
+
+def set_cell_width(width):
+    C.CELL_WIDTH = width
 
 
 def main():
@@ -105,15 +114,15 @@ if __name__ == '__main__':
     C.MAX_ITERATIONS = 40
     C.CELL_WIDTH = 4
     import cProfile
-    cProfile.run('main()', "benchmark_profiling\\output_cy.dat")
+    cProfile.run('main()', "benchmark_profiling\\output.dat")
 
     import pstats
     from pstats import SortKey
 
-    with open("benchmark_profiling\\output_time_cy.txt", "w") as f:
-        p = pstats.Stats("benchmark_profiling\\output_cy.dat", stream=f)
+    with open("benchmark_profiling\\output_time.txt", "w") as f:
+        p = pstats.Stats("benchmark_profiling\\output.dat", stream=f)
         p.sort_stats("time").print_stats()
 
-    with open("benchmark_profiling\\output_calls_cy.txt", "w") as f:
-        p = pstats.Stats("benchmark_profiling\\output_cy.dat", stream=f)
+    with open("benchmark_profiling\\output_calls.txt", "w") as f:
+        p = pstats.Stats("benchmark_profiling\\output.dat", stream=f)
         p.sort_stats("calls").print_stats()
