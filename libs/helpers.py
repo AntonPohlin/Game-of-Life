@@ -112,6 +112,7 @@ def update_cell_grid_dims(win_width, win_height, cell_width):
         C.COLUMNS_OF_CELLS, C.ROWS_OF_CELLS,
         C.CELL_WIDTH, C.CELL_GAP)
     C.ITERATIONS = 0
+    C.NUM_OF_CELLS = C.COLUMNS_OF_CELLS*C.ROWS_OF_CELLS
 
 
 def drag(pos):
