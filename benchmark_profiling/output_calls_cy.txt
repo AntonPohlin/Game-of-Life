@@ -1,0 +1,92 @@
+Wed May 19 16:37:28 2021    benchmark_profiling\output_cy.dat
+
+         130349 function calls in 5.890 seconds
+
+   Ordered by: call count
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    45000    0.017    0.000    0.021    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\random.py:415(uniform)
+    45000    0.005    0.000    0.005    0.000 {method 'random' of '_random.Random' objects}
+     6320    0.001    0.000    0.001    0.000 {method 'lower' of 'str' objects}
+     5865    0.002    0.000    0.003    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:60(<genexpr>)
+     5460    0.001    0.000    0.001    0.000 {method 'isalnum' of 'str' objects}
+     2667    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+     2663    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+     1770    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+     1368    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+     1344    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+     1322    0.002    0.000    0.003    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:124(splitdrive)
+     1322    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+      897    0.001    0.000    0.004    0.000 {method 'join' of 'str' objects}
+      661    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      456    0.000    0.000    0.002    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:203(splitext)
+      456    0.001    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\genericpath.py:121(_splitext)
+      456    0.002    0.000    0.002    0.000 {built-in method winreg.EnumValue}
+      451    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+      449    0.000    0.000    0.005    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:57(_simplename)
+      449    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+      448    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:34(_get_bothseps)
+      448    0.001    0.000    0.003    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:180(split)
+      448    0.000    0.000    0.003    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:221(dirname)
+      448    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:63(_addfont)
+      448    0.001    0.000    0.007    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:125(_parse_font_entry_win)
+      448    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+      437    0.001    0.000    0.003    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\ntpath.py:77(join)
+      410    0.007    0.000    0.007    0.000 {method 'render' of 'pygame.font.Font' objects}
+      410    0.005    0.000    0.005    0.000 {method 'blit' of 'pygame.Surface' objects}
+      287    0.000    0.000    0.000    0.000 {built-in method builtins.sum}
+      239    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+      205    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      164    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x000007FED252B810}
+       82    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1625(_cpu_tot_time)
+       82    0.001    0.000    0.001    0.000 {built-in method builtins.round}
+       41    0.001    0.000    0.018    0.000 C:\Users\Anton\Documents\programmering\mypy\random_things\game_of_life\latest_version\game_of_life_cy.py:33(draw_label)
+       41    0.000    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1584(cpu_times)
+       41    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1644(_cpu_busy_time)
+       41    0.000    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1660(_cpu_times_deltas)
+       41    0.000    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1722(calculate)
+       41    0.000    0.000    0.002    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1681(cpu_percent)
+       41    0.000    0.000    0.002    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\__init__.py:1910(virtual_memory)
+       41    0.000    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\_pswindows.py:282(cpu_times)
+       41    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\_pswindows.py:288(<listcomp>)
+       41    0.000    0.000    0.002    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\_pswindows.py:228(virtual_memory)
+       41    0.000    0.000    0.001    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\site-packages\psutil\_common.py:373(usage_percent)
+       41    0.000    0.000    0.000    0.000 <string>:1(__new__)
+       41    0.000    0.000    0.000    0.000 {built-in method psutil_windows.virtual_mem}
+       41    0.000    0.000    0.000    0.000 {built-in method psutil_windows.cpu_times}
+       41    0.000    0.000    0.000    0.000 {built-in method psutil_windows.per_cpu_times}
+       41    2.298    0.056    2.298    0.056 {helpers_cy.draw_cell}
+       41    0.001    0.000    0.005    0.000 {helpers_cy.get_data}
+       41    0.000    0.000    0.000    0.000 {built-in method pygame.time.Clock}
+       41    0.636    0.016    0.636    0.016 {method 'tick' of 'Clock' objects}
+       41    0.015    0.000    0.015    0.000 {method 'fill' of 'pygame.Surface' objects}
+       41    0.004    0.000    0.004    0.000 {built-in method pygame.event.get}
+       41    0.030    0.001    0.030    0.001 {built-in method pygame.display.update}
+       40    2.708    0.068    2.708    0.068 {helpers_cy.next_iteration}
+        3    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\os.py:670(__getitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\os.py:734(check_str)
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\os.py:740(encodekey)
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py:657(get)
+        1    0.002    0.002    5.890    5.890 C:\Users\Anton\Documents\programmering\mypy\random_things\game_of_life\latest_version\game_of_life_cy.py:19(main)
+        1    0.001    0.001    0.018    0.018 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:70(initsysfonts_win32)
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:271(create_aliases)
+        1    0.000    0.000    0.018    0.018 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:302(initsysfonts)
+        1    0.000    0.000    0.000    0.000 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:321(font_constructor)
+        1    0.000    0.000    0.019    0.019 C:\Users\Anton\AppData\Roaming\Python\Python38\site-packages\pygame\sysfont.py:344(SysFont)
+        1    0.000    0.000    5.890    5.890 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method winreg.OpenKey}
+        1    0.000    0.000    0.000    0.000 {built-in method winreg.QueryInfoKey}
+        1    0.000    0.000    5.890    5.890 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method sys.getwindowsversion}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.064    0.064    0.086    0.086 {helpers_cy.update_cell_grid_dims}
+        1    0.000    0.000    0.000    0.000 {built-in method pygame.image.load}
+        1    0.011    0.011    0.011    0.011 {built-in method pygame.display.set_mode}
+        1    0.000    0.000    0.000    0.000 {built-in method pygame.display.set_caption}
+        1    0.000    0.000    0.000    0.000 {built-in method pygame.display.set_icon}
+        1    0.063    0.063    0.063    0.063 {built-in method pygame.base.init}
+
+
